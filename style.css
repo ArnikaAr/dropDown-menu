@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+h1 {
+    text-align: center;
+    color: #3d7489;
+    font-family: 'Inconsolata', monospace;
+    
+}
+
+.ac-container {
+    width: 400px;
+    margin: 10px auto 30px auto;
+}
+
+.ac-container label {
+    font-family: 'Inconsolata', monospace;
+    padding: 5px 20px;
+    position: relative;
+    z-index: 20;
+    display: block;
+    height: 30px;
+    cursor: pointer;
+    color: #777;
+    border-right: 1px solid #c6e1ec;
+    border-left: 1px solid #c6e1ec;
+    border-top: 1px solid #c6e1ec;
+}
+
+.ac-container label:hover {
+    background: #fff;
+}
+
+.ac-container input:checked+label, .ac-container input:checked+label:hover {
+    background: #c6e1ec;
+    color: #3d7489;
+}
+
+.ac-container input {
+    display: none;
+}
+
+.ac-container ul {
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 10;
+    list-style-type: none;
+    border-right: 1px solid #c6e1ec;
+    border-bottom: 1px solid #c6e1ec;
+    border-left: 1px solid #c6e1ec;
+}
+
+.ac-container li {
+    padding: 5px;
+}
+
+.ac-container a {
+    color: #777 !important;
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+}
+
+.ac-container a:hover {
+    text-decoration: underline;
+}
+
+.ac-container input:checked~ul {
+    height: 150px;
+}
